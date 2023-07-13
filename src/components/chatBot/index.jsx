@@ -10,7 +10,7 @@ const ChatModal = () => {
   return (
     <>
       <Container>
-        <Button onClick={openModal}>Modal</Button>
+        <Button onClick={openModal}>Open</Button>
         <Modal showModal={showModal} setShowModal={setShowModal} />
         <GlobalStyle />
       </Container>

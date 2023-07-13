@@ -86,12 +86,14 @@ const Modal = ({ showModal, setShowModal }) => {
           <animated.div style={animation}>
             <ModalWrapper showModal={showModal}>
               <ModalImg src={modal} alt="colored" />
+
               <ModalContent>
                 <Response>
                   {error && <div>{error}</div>}
                   {responseData && <p>{responseData.text}</p>}
+                  {isLoading && <div>Loading...</div>}
                 </Response>
-                {isLoading && <div>Loading...</div>}
+
                 <form onSubmit={handleSubmit}>
                   <InputDiv>
                     <input
@@ -106,6 +108,7 @@ const Modal = ({ showModal, setShowModal }) => {
                   </InputDiv>
                 </form>
               </ModalContent>
+
               <CloseModalButton
                 aria-label="Close modal"
                 onClick={() => setShowModal((prev) => !prev)}

@@ -22,7 +22,7 @@ export const Button = styled.button`
 
 export const GlobalStyle = createGlobalStyle`
 	*{
-		box-sizing: border-box;
+		/* box-sizing: border-box; */
 		margin: 0;
 		padding: 0;
 		font-family: 'Arial', sans-serif;
@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 export const Background = styled.div`
   width: 100%;
   height: 100%;
-  background: 68B2A0;
+  background: #2c6965;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -41,7 +41,7 @@ export const Background = styled.div`
 
 export const ModalWrapper = styled.div`
   width: 800px;
-  height: 500px;
+  height: 520px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
@@ -102,8 +102,18 @@ export const InputDiv = styled.div`
 `;
 
 export const Response = styled.div`
-  border: 2px solid #2c6975;
-  word-wrap: break-word;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  height: 400px;
+  width: 95%;
+  overflow: scroll;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  /* border: 2px solid red; */
+  
 
   p {
     color: #000;
