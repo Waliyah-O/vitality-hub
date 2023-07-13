@@ -16,9 +16,6 @@ import {
 } from "./NavbarElements";
 import { useEffect } from "react";
 
-//modal imports
-import Modal from "../chatBot/modal";
-import { Container, Button, GlobalStyle } from "../chatBot/ChatModalElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -37,12 +34,6 @@ const Navbar = ({ toggle }) => {
 
   const toggleHome = () => {
     scroll.scrollToTop();
-  };
-
-  //modal
-  const [showModal, setShowModal] = useState(false);
-  const openModal = () => {
-    setShowModal((prev) => !prev);
   };
 
   return (
